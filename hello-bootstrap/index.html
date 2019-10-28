@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"><!--这行支持自适应设备用的-->
+
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+    <link href="assets/plugins/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet"/>
+    <style type="text/css">
+    .mydiv{
+        border: 1px solid red;
+    }
+    .mydiv1{
+        border: 1px solid red !important;
+    }
+    @media screen and (max-width: 480px) {
+        .mydiv{
+            border: 1px solid yellow;
+        }
+    }
+    </style>
+</head>
+<body>
+<h1>Hello Bootstrap</h1><br/>
+
+<div class="container" style="border:1px solid green">
+    <div class="row">
+        <div class="col-md-6 col-xs-6" style="border:1px solid red">左1</div>
+        <div class="col-md-6 col-xs-6" style="border:1px solid red">右1</div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-xs-6" style="border:1px solid yellow">左2</div>
+        <div class="col-md-6 col-xs-6" style="border:1px solid yellow">右2</div>
+    </div>
+</div><br/>
+
+<div class="mydiv">
+    hello 媒体查询
+</div><br/>
+
+<div class="mydiv1" style="border: 1px solid black">
+    hello 媒体查询
+</div><br/>
+
+<div class="container">
+    <table class="table table-hover table-striped table-bordered  table-condensed">
+        <thead>
+        <tr>
+            <td>说明</td>
+            <td>备注</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>111</td>
+            <td>222</td>
+        </tr>
+        <tr>
+            <td>111</td>
+            <td>222</td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>999</td>
+                <td>666</td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+
+<span class="glyphicon glyphicon-search" style="font-size: 100px;color: rebeccapurple"></span>
+
+<!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+<!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+<script src="assets/plugins/jquery-3.3.1.min.js"></script>
+<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
